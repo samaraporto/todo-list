@@ -1,0 +1,13 @@
+import { useEffect } from 'react';
+const [toggle, setToggle] = useState(false)
+useEffect(()=> {
+  console.log('executando a funcao de efeito');
+
+  //componentWillUnmount() => cleanup function
+  return()=>{
+    console.log('exe quando o componente app for desmontado da tela')
+  }
+}, [toggle])//a funcao sera disparada sempre que alguma coisa mudar no array de dependencias
+//por padrao o useEffect sera disparado apos a montagem do componente
+
+<button onClick={()=>setToggle(!toggle)}>toggle</button>

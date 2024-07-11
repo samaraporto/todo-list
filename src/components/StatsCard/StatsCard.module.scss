@@ -1,0 +1,21 @@
+.stats_card{
+    background-color: #486352;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+
+    h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    span{
+        font-size: 4rem;
+    }
+}
+.stats_card:hover{
+    background-color: #4a8562;
+    transition: ease .4s;
+}
