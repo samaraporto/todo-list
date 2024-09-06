@@ -42,6 +42,8 @@ export const Tasks: React.FC = ()=>{
             return task.id !== taskId
         })
         setTasks(newTasks)
+        localStorage.setItem('tasks', JSON.stringify(newTasks))
+        setTaskTitle('')
     }
 
     return(
